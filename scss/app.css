@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box; }
+
+body {
+  margin: 40px; }
+
+.title-content {
+  height: 189px;
+  margin-top: 7.5%;
+  position: relative;
+  font-size: 3px;
+  letter-spacing: 2px;
+  color: whitesmoke; }
+  .title-content .line {
+    width: 181px;
+    height: 9px;
+    background-color: #BC9A44;
+    margin: 0 auto;
+    position: absolute;
+    top: 49px;
+    left: 110px; }
+
+section {
+  width: 1130px;
+  height: 445px;
+  background-color: burlywood;
+  margin: 0 auto; }
+
+.hero {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1; }
+
+.img-bg {
+  width: 100%;
+  height: 100%; }
+
+.header {
+  margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  float: left;
+  width: 100vw;
+  height: 640px; }
+  .header .l-block {
+    width: 43vw;
+    height: 640px;
+    background-color: black;
+    position: center; }
+    .header .l-block .left {
+      background-image: url("../x-img/wood-right.png");
+      background-repeat: no-repeat;
+      opacity: 0.6; }
+  .header .r-block {
+    width: 43vw;
+    height: 580px;
+    background-color: black; }
+    .header .r-block .right {
+      background-image: url("../x-img/wood-left.png");
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      z-index: 1; }
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto; }
+  .about-section .image-container .layout {
+    position: absolute;
+    width: 334px;
+    height: 446px;
+    background-color: #BC9A44;
+    top: -50px;
+    z-index: -1;
+    left: -100px; }
+  .about-section .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    justify-content: space-around; }
+    .about-section .text-container .text-wrapper {
+      width: 445px; }
+      .about-section .text-container .text-wrapper p {
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 2px;
+        font-family: 'Raleway', fantasy; }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+
+$gold: #BC9A44;
+$text-color: darkgray;
+
+body {
+}
+
+.title-content {
+  height: 189px;
+  margin-top: 15%;
+  position: relative;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: whitesmoke;
+ .line {
+   position: absolute;
+   width: 306px;
+   height: 6px;
+   background-color: #BC9A44;
+   margin: 0 auto;
+   position: absolute;
+   top:66px;
+   left: -100px;
+ }
+}
+
+section {
+  width: 1130px;
+  height: 445px;
+  background-color: burlywood;
+  margin: 0 auto;
+}
+
+.hero {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: -1;
+}
+
+.img-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  margin: 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  float: left;
+  width: 100vw;
+  height: 640px;
+  .l-block {
+    width: 43vw;
+    height: 640px;
+    background-color: black;
+    position: center;
+      .left {
+        background-image: url("../img/wood-right.png");
+        background-repeat: no-repeat;
+        opacity: 0.6;
+        border-top: 6px solid rgba(26, 22, 21, 0.2);
+        border-left: 6px solid rgba(26, 22, 21, 0.2);
+      }
+  }
+  .r-block {
+    width: 43vw;
+    height: 580px;
+    background-color: black;
+      .right {
+        background-image: url("../img/wood-left.png");
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: 1;
+        border-right: 6px solid rgba(26, 22, 21, 0.6);
+        border-bottom: 6px solid rgba(26, 22, 21, 0.6);
+    }
+  }
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  .image-container {
+    .layout {
+      position: absolute;
+      width: 334px;
+      height: 446px;
+      background-color: $gold;
+      top: -50px;
+      z-index: -1;
+      left: -100px;
+    }
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    justify-content: space-around;
+    .text-wrapper {
+      width: 445px;
+      p {
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 2px;
+        font-family: 'Raleway', fantasy;
+      }
+    }
+  }
+}
