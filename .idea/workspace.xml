@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa7b67a5-7665-430e-a11b-c580938fb6d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.sass-cache/10e742bf95decb0f23f7811b1aa103703f702db4/app.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/.sass-cache/10e742bf95decb0f23f7811b1aa103703f702db4/app.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/app.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/app.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wood-stock" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +55,9 @@
       <option name="presentableId" value="Default" />
       <updated>1565188134234</updated>
       <workItem from="1565188148675" duration="1929000" />
-      <workItem from="1565203826698" duration="12597000" />
+      <workItem from="1565203826698" duration="12843000" />
+      <workItem from="1565288461332" duration="132000" />
+      <workItem from="1565471138909" duration="16586000" />
     </task>
     <servers />
   </component>
