@@ -7,33 +7,32 @@
   box-sizing: border-box;
 }
 
-
-$gold: #BC9A44;
-$orange: #BE7C5B;
-$yellow: #F1AC76;
-$backyellow: rgba(241, 172, 118, 0.8);
-$red: #B69186;
+$gold: #8C7332;
+$orange: #8A4914;
+$yellow: #C98608;
+$backyellow: rgba(241, 172, 118, 1);
+$smokebrown: #87735D;
 $gray: #837977;
 $text-color: darkgray;
 
 @mixin borderlefttop {
-  border-left: 4px solid rgba(28, 28, 26, 0.8);
-  border-top: 4px solid rgba(28, 28, 26, 0.8);
+  border-left: 3px solid rgba(18, 18, 17, 1);
+  border-top: 3px solid rgba(18, 18, 17, 1);
   border-radius: 6px;
 }
 @mixin borderleftbottem {
-  border-left: 4px solid rgba(28, 28, 26, 0.8);
-  border-bottom: 4px solid rgba(28, 28, 26, 0.8);
+  border-left: 3px solid rgba(18, 18, 17, 1);
+  border-bottom: 3px solid rgba(18, 18, 17, 1);
   border-radius: 6px;
 }
 @mixin borderrightbottem {
-  border-right: 4px solid rgba(28, 28, 26, 0.8);
-  border-bottom: 4px solid rgba(28, 28, 26, 0.8);
+  border-right: 3px solid rgba(18, 18, 17, 1);
+  border-bottom: 3px solid rgba(18, 18, 17, 1);
   border-radius: 6px;
 }
 @mixin borderrighttop {
-  border-right: 4px solid rgba(28, 28, 26, 0.8);
-  border-top: 4px solid rgba(28, 28, 26, 0.8);
+  border-right: 3px solid rgba(18, 18, 17, 1);
+  border-top: 3px solid rgba(18, 18, 17, 1);
   border-radius: 6px;
 }
 @mixin textandtitleswrap {
@@ -65,14 +64,13 @@ $text-color: darkgray;
    background-color: #BC9A44;
    box-shadow: 1px 1px 2px #262623;
    margin: 0 auto;
-
    top: 140px;
    left: 8px;
  }
 }
 
 .titlebox {
-  margin: 20px 20px;
+  margin: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,11 +88,12 @@ $text-color: darkgray;
         background-repeat: no-repeat;
         opacity: 0.9;
         @include borderlefttop;
-        border-radius: 0px;
+        border-radius: 0;
+        border-width: 6px;
       }
   }
   .r-block {
-    width: 755PX;
+    width: 740PX;
     height: 561px;
       .right {
         background-image: url("../img/lumber-01b.jpg"), linear-gradient(#0F0F0F, #0A0A09);
@@ -102,7 +101,8 @@ $text-color: darkgray;
         opacity: 0.9;
         z-index: 1;
         @include borderrightbottem;
-        border-radius: 0px;
+        border-radius: 0;
+        border-width: 6px;
     }
   }
 }
@@ -123,16 +123,15 @@ $text-color: darkgray;
 section {
   display: block;
   box-sizing: content-box;
-  margin-bottom: 200px;
+  margin-top: 200px;
   padding-left: 100px;
 }
 
 article {
   display: block;
-  width: 1130px;
-  height: 445px;
+  width: 1200px;
+  height: 460px;
   background-color: white;
-  @include borderlefttop;
   margin: 0 auto;
 }
 
@@ -140,15 +139,16 @@ article {
   display: flex;
   justify-content: space-around;
   position: relative;
+  @include borderlefttop;
   box-shadow: -4px -4px 22px #131413;
   .image-container-1 {
     padding-top: 50px;
-    margin-left: -20px;
+    margin-left: -10px;
     .layout-1 {
       position: absolute;
-      width: 1134px;
-      height: 454px;
-      background-color: $red;
+      width: 1200px;
+      height: 460px;
+      background-color: $smokebrown;
       border-radius: 6px;
       top: -65px;
       z-index: -1;
@@ -169,36 +169,36 @@ article {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: -120px;
-    width: 520px;
-    height: 449px;
+    margin-left: -90px;
+    width: 660px;
+    height: 448px;
     @include borderleftbottem;
     background-color: $orange;
     justify-content: space-evenly;
     box-shadow: -4px 4px 12px #131413;
       .h3-1 {
-        margin: 10px 160px 0 0;
+        margin: 10px 240px 0 0;
         padding: 16px 0 12px 36px;
         color: darkslategray;
         letter-spacing: 4px;
         @include borderrightbottem;
         @include textandtitleswrap;
         text-shadow: 1px 1px 3px lightgoldenrodyellow;
-        background-color: $red;
-        border-bottom-left-radius: 0px;
-        border-top-left-radius: 0px;
+        background-color: $smokebrown;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
       }
     .text-wrapper-1 {
-      width: 490px;
+      width: 606px;
       @include borderrightbottem;
       @include textandtitleswrap;
-      padding-bottom: 40px;
-      padding-right: 40px;
-      border-bottom-left-radius: 0px;
-      border-top-left-radius: 0px;
+      padding-bottom: 20px;
+      padding-right: 30px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
       .P1 {
-        padding: 40px 0 0  36px;
-        font-size: 16px;
+        padding: 20px 0 0 36px;
+        font-size: 14px;
         line-height: 160%;
         letter-spacing: 2px;
         color: darkslategray;
@@ -208,16 +208,16 @@ article {
     .button-container-1 {
       @include borderrightbottem;
       @include textandtitleswrap;
-      background-color: $red;
-      margin: 0 255px 0 0;
-      padding: 8px 40px;
-      border-bottom-left-radius: 0px;
-      border-top-left-radius: 0px;
+      background-color: $smokebrown;
+      margin: 0 240px 0 0;
+      padding: 8px 36px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
       .button-1 {
         color: darkslategray;
         text-align: center;
         text-decoration: none;
-        font-weight: 700;
+        font-weight: 900;
         span {
           font-size: 28px;
         }
@@ -231,43 +231,46 @@ article {
   justify-content: space-around;
   position: relative;
   box-shadow: 4px -4px 22px #131413;
+  @include borderrighttop;
+  height: 640px;
   left: -80px;
+  margin-top: 280px;
   .text-container-2 {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 26px;
-    width: 420px;
-    height: 549px;
+    margin-left: 10px;
+    width: 525px;
+    height: 640px;
     @include borderrightbottem;
     background-color: $orange;
     justify-content: space-evenly;
     box-shadow: 4px 4px 12px #131413;
     .h3-2 {
       margin: 10px 0 0 160px;
-      padding: 16px 40px 12px 36px;
+      padding: 16px 36px 12px 36px;
       color: darkslategray;
       letter-spacing: 4px;
       @include borderleftbottem;
       @include textandtitleswrap;
       text-align: right;
       text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: $red;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
+      background-color: $smokebrown;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
     }
     .text-wrapper-2 {
-      width: 390px;
-      margin-left: 26px;
+      width: 472px;
+      margin-left: 50px;
       @include borderleftbottem;
       @include textandtitleswrap;
-      padding-bottom: 40px;
-      padding-right: 40px;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
+      padding-bottom: 20px;
+      padding-right: 36px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
       .P2 {
-        padding: 40px 0 0  36px;
-        font-size: 16px;
+        padding: 20px 0 0 36px;
+        font-size: 14px;
         text-align: right;
         line-height: 160%;
         letter-spacing: 2px;
@@ -278,11 +281,11 @@ article {
     .button-container-2 {
       @include borderleftbottem;
       @include textandtitleswrap;
-      background-color: $red;
+      background-color: $smokebrown;
       margin: 0 0 0 158px;
-      padding: 8px 40px;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
+      padding: 8px 36px 8px 150px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
       .button-2 {
         color: darkslategray;
         text-align: center;
@@ -296,18 +299,29 @@ article {
   }
   .image-container-2 {
     padding-top: 50px;
-    margin-left: -24px;
+    margin-left: -50px;
     .layout-2 {
       position: absolute;
-      width: 1134px;
-      height: 454px;
-      background-color: $red;
+      width: 1200px;
+      height: 640px;
+      background-color: $smokebrown;
       border-radius: 6px;
       top: -65px;
       z-index: -1;
       left: 80px;
     }
-    .image-wrapper-2 {
+    .image-wrapper-2a {
+      margin-bottom: 20px;
+      background-color: #1A1A19;
+      height: 272px;
+      border-radius: 6px;
+      .lounge {
+        box-shadow: -4px 4px 12px #131413;
+        opacity: 0.8;
+        @include borderleftbottem;
+      }
+    }
+    .image-wrapper-2b {
       background-color: #1A1A19;
       height: 348px;
       border-radius: 6px;
@@ -317,6 +331,7 @@ article {
         @include borderleftbottem;
       }
     }
+
   }
 }
 
@@ -325,16 +340,39 @@ article {
   justify-content: space-around;
   position: relative;
   box-shadow: -4px -4px 22px #131413;
-  left: -80px;
-  top: 100px;
-  float: left;
+  @include borderlefttop;
+  height: 692px;
+  margin-top: 280px;
+  .image-container-3 {
+    padding-top: 50px;
+    .layout-3 {
+      position: absolute;
+      width: 1200px;
+      height: 692px;
+      background-color: $smokebrown;
+      border-radius: 6px;
+      top: -65px;
+      z-index: -1;
+      left: -80px;
+    }
+    .image-wrapper-3 {
+      background-color: #1A1A19;
+      height: 692px;
+      border-radius: 6px;
+      .bedroom {
+        box-shadow: 4px 4px 12px #131413;
+        opacity: 0.8;
+        @include borderrightbottem;
+      }
+    }
+  }
   .text-container-3 {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
-    margin-left: -120px;
-    width: 390px;
-    height: 500px;
+    margin-top: 50px;
+    margin-left: -80px;
+    width: 540px;
+    height: 692px;
     @include borderleftbottem;
     background-color: $orange;
     justify-content: space-evenly;
@@ -347,9 +385,9 @@ article {
       @include borderrightbottem;
       @include textandtitleswrap;
       text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: $red;
-      border-bottom-left-radius: 0px;
-      border-top-left-radius: 0px;
+      background-color: $smokebrown;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
     }
     .text-wrapper-3 {
       width: 490px;
@@ -357,11 +395,11 @@ article {
       @include textandtitleswrap;
       padding-bottom: 40px;
       padding-right: 40px;
-      border-bottom-left-radius: 0px;
-      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
       .P3 {
-        padding: 40px 0 0  36px;
-        font-size: 16px;
+        padding: 20px 0 0 36px;
+        font-size: 14px;
         line-height: 160%;
         letter-spacing: 2px;
         color: darkslategray;
@@ -371,11 +409,11 @@ article {
     .button-container-3 {
       @include borderrightbottem;
       @include textandtitleswrap;
-      background-color: $red;
-      margin: 0 255px 0 0;
+      background-color: $smokebrown;
+      margin: 0 160px 0 0;
       padding: 8px 40px;
-      border-bottom-left-radius: 0px;
-      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
       .button-3 {
         color: darkslategray;
         text-align: center;
@@ -388,7 +426,7 @@ article {
     }
   }
 }
-
+/*
 .about-article-4 {
   display: flex;
   justify-content: space-around;
@@ -417,7 +455,7 @@ article {
       @include textandtitleswrap;
       text-align: right;
       text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: $red;
+      background-color: $smokebrown;
       border-bottom-right-radius: 0px;
       border-top-right-radius: 0px;
     }
@@ -443,7 +481,7 @@ article {
     .button-container-4 {
       @include borderleftbottem;
       @include textandtitleswrap;
-      background-color: $red;
+      background-color: $smokebrown;
       margin: 0 0 0 158px;
       padding: 8px 40px;
       border-bottom-right-radius: 0px;
@@ -459,14 +497,14 @@ article {
       }
     }
   }
-  .image-container-3 {
+  .image-container-4 {
     padding-top: 50px;
     margin-left: -24px;
     .layout-3 {
       position: absolute;
-      width: 1134px;
+      width: 1200px;
       height: 454px;
-      background-color: $red;
+      background-color: $smokebrown;
       border-radius: 6px;
       top: -65px;
       z-index: -1;
@@ -474,4 +512,4 @@ article {
     }
   }
 }
-
+*/
