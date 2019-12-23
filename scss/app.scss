@@ -8,11 +8,12 @@
 }
 
 $gold: #8C7332;
-$orange: #8A4914;
-$yellow: #C98608;
+//$orange: #8A4914;
+$orange: #6B380F;
+$yellow: #E6AE02;
 $backyellow: rgba(241, 172, 118, 1);
 $smokebrown: #87735D;
-$gray: #837977;
+$gray: #C2C2C2;
 $text-color: darkgray;
 
 @mixin borderlefttop {
@@ -42,7 +43,7 @@ $text-color: darkgray;
 }
 
 
-.header {
+.headerbox {
   display: block;
   margin-bottom: 180px;
 }
@@ -84,30 +85,32 @@ $text-color: darkgray;
     height: 640px;
     position: center;
       .left {
-        background-image: url("../img/woodboard-02c.jpg"), linear-gradient(#131413, #1A1A19, #292815);
+        background-image: url("../img/wood-left.jpg"), linear-gradient(#131413, #1A1A19, #292815);
         background-repeat: no-repeat;
         opacity: 0.9;
         @include borderlefttop;
         border-radius: 0;
-        border-width: 6px;
+        border-top-left-radius: 66px;
+        border-width: 12px;
       }
   }
   .r-block {
     width: 740PX;
     height: 561px;
       .right {
-        background-image: url("../img/lumber-01b.jpg"), linear-gradient(#0F0F0F, #0A0A09);
+        background-image: url("../img/wood-right.jpg"), linear-gradient(#0F0F0F, #0A0A09);
         background-repeat: no-repeat;
         opacity: 0.9;
         z-index: 1;
         @include borderrightbottem;
         border-radius: 0;
-        border-width: 6px;
+        border-bottom-right-radius: 66px;
+        border-width: 12px;
     }
   }
 }
 
-.hero {
+.header {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +127,7 @@ section {
   display: block;
   box-sizing: content-box;
   margin-top: 200px;
-  padding-left: 100px;
+  //padding-left: 100px;
 }
 
 article {
@@ -140,19 +143,23 @@ article {
   justify-content: space-around;
   position: relative;
   @include borderlefttop;
-  box-shadow: -4px -4px 22px #131413;
+  background-image: url("../img/woodboard-11.jpg");
+  box-shadow: -4px -4px 16px #131413;
   .image-container-1 {
     padding-top: 50px;
     margin-left: -10px;
     .layout-1 {
       position: absolute;
-      width: 1200px;
+      width: 1300px;
       height: 460px;
-      background-color: $smokebrown;
-      border-radius: 6px;
-      top: -65px;
+      @include borderlefttop;
+      @include borderrightbottem;
+      border-color: $smokebrown;
+      border-width: 6px;
+      border-radius: 10px;
+      top: -50px;
       z-index: -1;
-      left: -80px;
+      left: -50px;
     }
     .image-wrapper-1 {
       background-color: #1A1A19;
@@ -162,6 +169,7 @@ article {
         box-shadow: 4px 4px 12px #131413;
         opacity: 0.8;
         @include borderrightbottem;
+        border-color: $orange;
       }
     }
   }
@@ -173,7 +181,8 @@ article {
     width: 660px;
     height: 448px;
     @include borderleftbottem;
-    background-color: $orange;
+    background-image: url("../img/woodboard-08.jpg");
+    border-color: $orange;
     justify-content: space-evenly;
     box-shadow: -4px 4px 12px #131413;
       .h3-1 {
@@ -181,10 +190,11 @@ article {
         padding: 16px 0 12px 36px;
         color: darkslategray;
         letter-spacing: 4px;
+        text-shadow: 1px 1px 3px lightgoldenrodyellow;
         @include borderrightbottem;
         @include textandtitleswrap;
-        text-shadow: 1px 1px 3px lightgoldenrodyellow;
-        background-color: $smokebrown;
+        border-color: $yellow;
+        //background-color: $gray;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
       }
@@ -192,6 +202,7 @@ article {
       width: 606px;
       @include borderrightbottem;
       @include textandtitleswrap;
+      border-color: $yellow;
       padding-bottom: 20px;
       padding-right: 30px;
       border-bottom-left-radius: 0;
@@ -203,14 +214,15 @@ article {
         letter-spacing: 2px;
         color: darkslategray;
         font-family: 'Raleway', fantasy;
+
       }
     }
     .button-container-1 {
-      @include borderrightbottem;
-      @include textandtitleswrap;
-      background-color: $smokebrown;
       margin: 0 240px 0 0;
       padding: 8px 36px;
+      @include borderrightbottem;
+      @include textandtitleswrap;
+      border-color: $yellow;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       .button-1 {
@@ -230,10 +242,11 @@ article {
   display: flex;
   justify-content: space-around;
   position: relative;
-  box-shadow: 4px -4px 22px #131413;
-  @include borderrighttop;
+  box-shadow: -4px -4px 16px #131413;
+  @include borderlefttop;
+  background-image: url("../img/woodboard-06.jpg");
   height: 640px;
-  left: -80px;
+  //left: -80px;
   margin-top: 280px;
   .text-container-2 {
     display: flex;
@@ -243,7 +256,8 @@ article {
     width: 525px;
     height: 640px;
     @include borderrightbottem;
-    background-color: $orange;
+    border-color: $orange;
+    background-image: url("../img/woodboard-09b.jpg");
     justify-content: space-evenly;
     box-shadow: 4px 4px 12px #131413;
     .h3-2 {
@@ -251,11 +265,12 @@ article {
       padding: 16px 36px 12px 36px;
       color: darkslategray;
       letter-spacing: 4px;
-      @include borderleftbottem;
-      @include textandtitleswrap;
       text-align: right;
       text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: $smokebrown;
+      //background-color: $smokebrown;
+      @include borderleftbottem;
+      @include textandtitleswrap;
+      border-color: $yellow;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
     }
@@ -279,11 +294,11 @@ article {
       }
     }
     .button-container-2 {
-      @include borderleftbottem;
-      @include textandtitleswrap;
-      background-color: $smokebrown;
       margin: 0 0 0 158px;
       padding: 8px 36px 8px 150px;
+      @include borderleftbottem;
+      @include textandtitleswrap;
+      border-color: $yellow;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
       .button-2 {
@@ -302,36 +317,40 @@ article {
     margin-left: -50px;
     .layout-2 {
       position: absolute;
-      width: 1200px;
+      width: 1300px;
       height: 640px;
-      background-color: $smokebrown;
-      border-radius: 6px;
-      top: -65px;
+      @include borderlefttop;
+      @include borderrightbottem;
+      border-color: $smokebrown;
+      border-width: 6px;
+      border-radius: 10px;
+      top: -50px;
       z-index: -1;
-      left: 80px;
+      left: -50px;
     }
     .image-wrapper-2a {
       margin-bottom: 20px;
-      background-color: #1A1A19;
+      background-color: whitesmoke;
       height: 272px;
       border-radius: 6px;
       .lounge {
         box-shadow: -4px 4px 12px #131413;
-        opacity: 0.8;
+        opacity: 0.9;
         @include borderleftbottem;
+        border-color: $orange;
       }
     }
     .image-wrapper-2b {
-      background-color: #1A1A19;
+      background-color: whitesmoke;
       height: 348px;
       border-radius: 6px;
       .resto {
         box-shadow: -4px 4px 12px #131413;
-        opacity: 0.8;
+        opacity: 0.9;
         @include borderleftbottem;
+        border-color: $orange;
       }
     }
-
   }
 }
 
@@ -341,28 +360,33 @@ article {
   position: relative;
   box-shadow: -4px -4px 22px #131413;
   @include borderlefttop;
+  background-image: url("../img/woodboard-03.jpg");
   height: 692px;
   margin-top: 280px;
   .image-container-3 {
     padding-top: 50px;
     .layout-3 {
       position: absolute;
-      width: 1200px;
+      width: 1300px;
       height: 692px;
-      background-color: $smokebrown;
-      border-radius: 6px;
-      top: -65px;
+      @include borderlefttop;
+      @include borderrightbottem;
+      border-color: $smokebrown;
+      border-width: 6px;
+      border-radius: 10px;
+      top: -50px;
       z-index: -1;
-      left: -80px;
+      left: -50px;
     }
     .image-wrapper-3 {
-      background-color: #1A1A19;
+      background-color: black;
       height: 692px;
       border-radius: 6px;
       .bedroom {
         box-shadow: 4px 4px 12px #131413;
         opacity: 0.8;
         @include borderrightbottem;
+        border-color: $orange;
       }
     }
   }
@@ -374,7 +398,8 @@ article {
     width: 540px;
     height: 692px;
     @include borderleftbottem;
-    background-color: $orange;
+    border-color: $orange;
+    background-image: url("../img/woodboard-09b.jpg");
     justify-content: space-evenly;
     box-shadow: -4px 4px 12px #131413;
     .h3-3 {
@@ -385,7 +410,7 @@ article {
       @include borderrightbottem;
       @include textandtitleswrap;
       text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: $smokebrown;
+      //background-color: $smokebrown;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
     }
@@ -409,7 +434,7 @@ article {
     .button-container-3 {
       @include borderrightbottem;
       @include textandtitleswrap;
-      background-color: $smokebrown;
+      //background-color: $smokebrown;
       margin: 0 160px 0 0;
       padding: 8px 40px;
       border-bottom-left-radius: 0;
@@ -426,6 +451,7 @@ article {
     }
   }
 }
+
 /*
 .about-article-4 {
   display: flex;

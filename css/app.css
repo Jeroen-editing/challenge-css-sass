@@ -5,7 +5,7 @@
   font-family: sans-serif;
   box-sizing: border-box; }
 
-.header {
+.headerbox {
   display: block;
   margin-bottom: 180px; }
 
@@ -44,19 +44,20 @@
     height: 640px;
     position: center; }
     .titlebox .l-block .left {
-      background-image: url("../img/woodboard-02c.jpg"), linear-gradient(#131413, #1A1A19, #292815);
+      background-image: url("../img/wood-left.jpg"), linear-gradient(#131413, #1A1A19, #292815);
       background-repeat: no-repeat;
       opacity: 0.9;
       border-left: 3px solid #121211;
       border-top: 3px solid #121211;
       border-radius: 6px;
       border-radius: 0;
-      border-width: 6px; }
+      border-top-left-radius: 66px;
+      border-width: 12px; }
   .titlebox .r-block {
     width: 740PX;
     height: 561px; }
     .titlebox .r-block .right {
-      background-image: url("../img/lumber-01b.jpg"), linear-gradient(#0F0F0F, #0A0A09);
+      background-image: url("../img/wood-right.jpg"), linear-gradient(#0F0F0F, #0A0A09);
       background-repeat: no-repeat;
       opacity: 0.9;
       z-index: 1;
@@ -64,9 +65,10 @@
       border-bottom: 3px solid #121211;
       border-radius: 6px;
       border-radius: 0;
-      border-width: 6px; }
+      border-bottom-right-radius: 66px;
+      border-width: 12px; }
 
-.hero {
+.header {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,8 +82,7 @@
 section {
   display: block;
   box-sizing: content-box;
-  margin-top: 200px;
-  padding-left: 100px; }
+  margin-top: 200px; }
 
 article {
   display: block;
@@ -97,19 +98,27 @@ article {
   border-left: 3px solid #121211;
   border-top: 3px solid #121211;
   border-radius: 6px;
-  box-shadow: -4px -4px 22px #131413; }
+  background-image: url("../img/woodboard-11.jpg");
+  box-shadow: -4px -4px 16px #131413; }
   .about-article-1 .image-container-1 {
     padding-top: 50px;
     margin-left: -10px; }
     .about-article-1 .image-container-1 .layout-1 {
       position: absolute;
-      width: 1200px;
+      width: 1300px;
       height: 460px;
-      background-color: #87735D;
+      border-left: 3px solid #121211;
+      border-top: 3px solid #121211;
       border-radius: 6px;
-      top: -65px;
+      border-right: 3px solid #121211;
+      border-bottom: 3px solid #121211;
+      border-radius: 6px;
+      border-color: #87735D;
+      border-width: 6px;
+      border-radius: 10px;
+      top: -50px;
       z-index: -1;
-      left: -80px; }
+      left: -50px; }
     .about-article-1 .image-container-1 .image-wrapper-1 {
       background-color: #1A1A19;
       height: 449px;
@@ -119,7 +128,8 @@ article {
         opacity: 0.8;
         border-right: 3px solid #121211;
         border-bottom: 3px solid #121211;
-        border-radius: 6px; }
+        border-radius: 6px;
+        border-color: #6B380F; }
   .about-article-1 .text-container-1 {
     display: flex;
     flex-direction: column;
@@ -130,7 +140,8 @@ article {
     border-left: 3px solid #121211;
     border-bottom: 3px solid #121211;
     border-radius: 6px;
-    background-color: #8A4914;
+    background-image: url("../img/woodboard-08.jpg");
+    border-color: #6B380F;
     justify-content: space-evenly;
     box-shadow: -4px 4px 12px #131413; }
     .about-article-1 .text-container-1 .h3-1 {
@@ -138,14 +149,14 @@ article {
       padding: 16px 0 12px 36px;
       color: darkslategray;
       letter-spacing: 4px;
+      text-shadow: 1px 1px 3px lightgoldenrodyellow;
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: #87735D;
+      border-color: #E6AE02;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
     .about-article-1 .text-container-1 .text-wrapper-1 {
@@ -153,9 +164,10 @@ article {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
+      border-color: #E6AE02;
       padding-bottom: 20px;
       padding-right: 30px;
       border-bottom-left-radius: 0;
@@ -168,15 +180,15 @@ article {
         color: darkslategray;
         font-family: 'Raleway', fantasy; }
     .about-article-1 .text-container-1 .button-container-1 {
+      margin: 0 240px 0 0;
+      padding: 8px 36px;
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
-      background-color: #87735D;
-      margin: 0 240px 0 0;
-      padding: 8px 36px;
+      border-color: #E6AE02;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
       .about-article-1 .text-container-1 .button-container-1 .button-1 {
@@ -191,12 +203,12 @@ article {
   display: flex;
   justify-content: space-around;
   position: relative;
-  box-shadow: 4px -4px 22px #131413;
-  border-right: 3px solid #121211;
+  box-shadow: -4px -4px 16px #131413;
+  border-left: 3px solid #121211;
   border-top: 3px solid #121211;
   border-radius: 6px;
+  background-image: url("../img/woodboard-06.jpg");
   height: 640px;
-  left: -80px;
   margin-top: 280px; }
   .about-article-2 .text-container-2 {
     display: flex;
@@ -208,7 +220,8 @@ article {
     border-right: 3px solid #121211;
     border-bottom: 3px solid #121211;
     border-radius: 6px;
-    background-color: #8A4914;
+    border-color: #6B380F;
+    background-image: url("../img/woodboard-09b.jpg");
     justify-content: space-evenly;
     box-shadow: 4px 4px 12px #131413; }
     .about-article-2 .text-container-2 .h3-2 {
@@ -216,15 +229,15 @@ article {
       padding: 16px 36px 12px 36px;
       color: darkslategray;
       letter-spacing: 4px;
+      text-align: right;
+      text-shadow: 1px 1px 3px lightgoldenrodyellow;
       border-left: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
-      text-align: right;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: #87735D;
+      border-color: #E6AE02;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
     .about-article-2 .text-container-2 .text-wrapper-2 {
@@ -233,8 +246,8 @@ article {
       border-left: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
       padding-bottom: 20px;
       padding-right: 36px;
@@ -249,15 +262,15 @@ article {
         color: darkslategray;
         font-family: 'Raleway', fantasy; }
     .about-article-2 .text-container-2 .button-container-2 {
+      margin: 0 0 0 158px;
+      padding: 8px 36px 8px 150px;
       border-left: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
-      background-color: #87735D;
-      margin: 0 0 0 158px;
-      padding: 8px 36px 8px 150px;
+      border-color: #E6AE02;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
       .about-article-2 .text-container-2 .button-container-2 .button-2 {
@@ -272,34 +285,43 @@ article {
     margin-left: -50px; }
     .about-article-2 .image-container-2 .layout-2 {
       position: absolute;
-      width: 1200px;
+      width: 1300px;
       height: 640px;
-      background-color: #87735D;
+      border-left: 3px solid #121211;
+      border-top: 3px solid #121211;
       border-radius: 6px;
-      top: -65px;
+      border-right: 3px solid #121211;
+      border-bottom: 3px solid #121211;
+      border-radius: 6px;
+      border-color: #87735D;
+      border-width: 6px;
+      border-radius: 10px;
+      top: -50px;
       z-index: -1;
-      left: 80px; }
+      left: -50px; }
     .about-article-2 .image-container-2 .image-wrapper-2a {
       margin-bottom: 20px;
-      background-color: #1A1A19;
+      background-color: whitesmoke;
       height: 272px;
       border-radius: 6px; }
       .about-article-2 .image-container-2 .image-wrapper-2a .lounge {
         box-shadow: -4px 4px 12px #131413;
-        opacity: 0.8;
+        opacity: 0.9;
         border-left: 3px solid #121211;
         border-bottom: 3px solid #121211;
-        border-radius: 6px; }
+        border-radius: 6px;
+        border-color: #6B380F; }
     .about-article-2 .image-container-2 .image-wrapper-2b {
-      background-color: #1A1A19;
+      background-color: whitesmoke;
       height: 348px;
       border-radius: 6px; }
       .about-article-2 .image-container-2 .image-wrapper-2b .resto {
         box-shadow: -4px 4px 12px #131413;
-        opacity: 0.8;
+        opacity: 0.9;
         border-left: 3px solid #121211;
         border-bottom: 3px solid #121211;
-        border-radius: 6px; }
+        border-radius: 6px;
+        border-color: #6B380F; }
 
 .about-article-3 {
   display: flex;
@@ -309,21 +331,29 @@ article {
   border-left: 3px solid #121211;
   border-top: 3px solid #121211;
   border-radius: 6px;
+  background-image: url("../img/woodboard-03.jpg");
   height: 692px;
   margin-top: 280px; }
   .about-article-3 .image-container-3 {
     padding-top: 50px; }
     .about-article-3 .image-container-3 .layout-3 {
       position: absolute;
-      width: 1200px;
+      width: 1300px;
       height: 692px;
-      background-color: #87735D;
+      border-left: 3px solid #121211;
+      border-top: 3px solid #121211;
       border-radius: 6px;
-      top: -65px;
+      border-right: 3px solid #121211;
+      border-bottom: 3px solid #121211;
+      border-radius: 6px;
+      border-color: #87735D;
+      border-width: 6px;
+      border-radius: 10px;
+      top: -50px;
       z-index: -1;
-      left: -80px; }
+      left: -50px; }
     .about-article-3 .image-container-3 .image-wrapper-3 {
-      background-color: #1A1A19;
+      background-color: black;
       height: 692px;
       border-radius: 6px; }
       .about-article-3 .image-container-3 .image-wrapper-3 .bedroom {
@@ -331,7 +361,8 @@ article {
         opacity: 0.8;
         border-right: 3px solid #121211;
         border-bottom: 3px solid #121211;
-        border-radius: 6px; }
+        border-radius: 6px;
+        border-color: #6B380F; }
   .about-article-3 .text-container-3 {
     display: flex;
     flex-direction: column;
@@ -342,7 +373,8 @@ article {
     border-left: 3px solid #121211;
     border-bottom: 3px solid #121211;
     border-radius: 6px;
-    background-color: #8A4914;
+    border-color: #6B380F;
+    background-image: url("../img/woodboard-09b.jpg");
     justify-content: space-evenly;
     box-shadow: -4px 4px 12px #131413; }
     .about-article-3 .text-container-3 .h3-3 {
@@ -353,11 +385,10 @@ article {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
       text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: #87735D;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
     .about-article-3 .text-container-3 .text-wrapper-3 {
@@ -365,8 +396,8 @@ article {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
       padding-bottom: 40px;
       padding-right: 40px;
@@ -383,10 +414,9 @@ article {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-top: 4px solid #C98608;
-      border-color: #C98608;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
       background-color: whitesmoke;
-      background-color: #87735D;
       margin: 0 160px 0 0;
       padding: 8px 40px;
       border-bottom-left-radius: 0;
