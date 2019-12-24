@@ -1,48 +1,53 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900|Kodchasan:500,600,700|Mitr:500,700|Montserrat+Alternates:500,600,700,800,900|Orbitron:500,600,700,900|Red+Hat+Display:700,900&display=swap");
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   box-sizing: border-box; }
 
 .headerbox {
-  display: block;
-  margin-bottom: 180px; }
+  display: block; }
+
+br {
+  line-height: 160%; }
 
 .title-content {
   height: 189px;
-  margin-top: 7%;
+  margin-left: -8px;
+  margin-top: 2.8%;
   position: relative;
-  font-size: 70px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 77px;
+  font-weight: 900;
   text-align: center;
-  text-shadow: 1px 1px 2px #262623;
+  text-shadow: -6px -6px 10px #332B23;
   line-height: 160px;
   letter-spacing: 28px;
   color: whitesmoke; }
   .title-content .line {
     position: absolute;
-    width: 590px;
+    width: 720px;
     height: 8px;
     background-color: #BC9A44;
-    box-shadow: 1px 1px 2px #262623;
+    box-shadow: -4px -4px 8px #332B23;
+    border-radius: 4px;
     margin: 0 auto;
-    top: 140px;
+    top: 220px;
     left: 8px; }
 
 .titlebox {
-  margin: 40px 0;
+  margin: 40px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 636px; }
   .titlebox .l-block {
     width: 755px;
     height: 640px;
-    position: center; }
+    margin-left: 61px; }
     .titlebox .l-block .left {
       background-image: url("../img/wood-left.jpg"), linear-gradient(#131413, #1A1A19, #292815);
       background-repeat: no-repeat;
@@ -51,11 +56,12 @@
       border-top: 3px solid #121211;
       border-radius: 6px;
       border-radius: 0;
-      border-top-left-radius: 66px;
-      border-width: 12px; }
+      border-top-left-radius: 80px;
+      border-width: 10px; }
   .titlebox .r-block {
     width: 740PX;
-    height: 561px; }
+    height: 561px;
+    margin-left: -61px; }
     .titlebox .r-block .right {
       background-image: url("../img/wood-right.jpg"), linear-gradient(#0F0F0F, #0A0A09);
       background-repeat: no-repeat;
@@ -65,8 +71,8 @@
       border-bottom: 3px solid #121211;
       border-radius: 6px;
       border-radius: 0;
-      border-bottom-right-radius: 66px;
-      border-width: 12px; }
+      border-bottom-right-radius: 80px;
+      border-width: 10px; }
 
 .header {
   position: absolute;
@@ -76,27 +82,66 @@
   z-index: -1; }
 
 .img-bg {
-  width: 100%;
-  height: 100%; }
+  width: 92%;
+  height: 92%; }
+
+.lineUnder {
+  width: 1440px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: #87735D;
+  margin: 0 auto; }
 
 section {
   display: block;
   box-sizing: content-box;
-  margin-top: 200px; }
+  margin-top: 140px; }
 
 article {
   display: block;
-  width: 1200px;
+  width: 1240px;
   height: 460px;
+  background-size: 105%;
   background-color: white;
   margin: 0 auto; }
+
+h3, a {
+  font-family: 'Orbitron', sans-serif;
+  color: darkslategray;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px lightgoldenrodyellow;
+  border-color: #E6AE02; }
+
+h3 {
+  font-size: 24px;
+  font-weight: 900; }
+
+p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 2px;
+  color: #243D3D;
+  font-family: 'Montserrat Alternates', sans-serif; }
+
+a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 8px 36px;
+  font-size: 22px;
+  font-weight: 500; }
+
+a:hover {
+  background-image: url("../img/woodboard-12.jpg");
+  background-size: contain;
+  color: #E6AE02;
+  text-shadow: 2px 2px 2px black; }
 
 .about-article-1 {
   display: flex;
   justify-content: space-around;
   position: relative;
-  border-left: 3px solid #121211;
-  border-top: 3px solid #121211;
   border-radius: 6px;
   background-image: url("../img/woodboard-11.jpg");
   box-shadow: -4px -4px 16px #131413; }
@@ -116,47 +161,49 @@ article {
       border-color: #87735D;
       border-width: 6px;
       border-radius: 10px;
-      top: -50px;
+      top: -33px;
       z-index: -1;
-      left: -50px; }
+      left: -33px; }
     .about-article-1 .image-container-1 .image-wrapper-1 {
-      background-color: #1A1A19;
-      height: 449px;
+      height: 445px;
       border-radius: 6px; }
       .about-article-1 .image-container-1 .image-wrapper-1 .chair {
         box-shadow: 4px 4px 12px #131413;
-        opacity: 0.8;
         border-right: 3px solid #121211;
         border-bottom: 3px solid #121211;
         border-radius: 6px;
-        border-color: #6B380F; }
+        border-left: 3px solid #121211;
+        border-top: 3px solid #121211;
+        border-radius: 6px;
+        border-color: #E6AE02;
+        border-width: 4px; }
   .about-article-1 .text-container-1 {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     margin-left: -90px;
     width: 660px;
-    height: 448px;
+    height: 452px;
+    justify-content: space-evenly;
+    background-image: url("../img/woodboard-08.jpg");
     border-left: 3px solid #121211;
     border-bottom: 3px solid #121211;
     border-radius: 6px;
-    background-image: url("../img/woodboard-08.jpg");
-    border-color: #6B380F;
-    justify-content: space-evenly;
+    border-right: 3px solid #121211;
+    border-top: 3px solid #121211;
+    border-radius: 6px;
+    border-color: #E6AE02;
+    border-width: 4px;
     box-shadow: -4px 4px 12px #131413; }
     .about-article-1 .text-container-1 .h3-1 {
       margin: 10px 240px 0 0;
       padding: 16px 0 12px 36px;
-      color: darkslategray;
-      letter-spacing: 4px;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
       border-top: 4px solid #E6AE02;
       border-color: #E6AE02;
       background-color: whitesmoke;
-      border-color: #E6AE02;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
     .about-article-1 .text-container-1 .text-wrapper-1 {
@@ -173,41 +220,34 @@ article {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
       .about-article-1 .text-container-1 .text-wrapper-1 .P1 {
-        padding: 20px 0 0 36px;
-        font-size: 14px;
-        line-height: 160%;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-family: 'Raleway', fantasy; }
+        padding: 20px 0 0 36px; }
     .about-article-1 .text-container-1 .button-container-1 {
       margin: 0 240px 0 0;
-      padding: 8px 36px;
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
       border-top: 4px solid #E6AE02;
       border-color: #E6AE02;
       background-color: whitesmoke;
-      border-color: #E6AE02;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
       .about-article-1 .text-container-1 .button-container-1 .button-1 {
-        color: darkslategray;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
-        font-weight: 900; }
-        .about-article-1 .text-container-1 .button-container-1 .button-1 span {
-          font-size: 28px; }
+        /*
+        font-weight: 900;
+        span {
+          font-size: 28px;
+        }
+         */ }
 
 .about-article-2 {
   display: flex;
   justify-content: space-around;
   position: relative;
   box-shadow: -4px -4px 16px #131413;
-  border-left: 3px solid #121211;
-  border-top: 3px solid #121211;
+  background-image: url("../img/woodboard-04.jpg");
   border-radius: 6px;
-  background-image: url("../img/woodboard-06.jpg");
   height: 640px;
   margin-top: 280px; }
   .about-article-2 .text-container-2 {
@@ -215,34 +255,35 @@ article {
     flex-direction: column;
     margin-top: 50px;
     margin-left: 10px;
-    width: 525px;
-    height: 640px;
+    width: 530px;
+    height: 648px;
+    justify-content: space-evenly;
     border-right: 3px solid #121211;
     border-bottom: 3px solid #121211;
     border-radius: 6px;
-    border-color: #6B380F;
+    border-left: 3px solid #121211;
+    border-top: 3px solid #121211;
+    border-radius: 6px;
+    border-color: #E6AE02;
+    border-width: 4px;
     background-image: url("../img/woodboard-09b.jpg");
-    justify-content: space-evenly;
     box-shadow: 4px 4px 12px #131413; }
     .about-article-2 .text-container-2 .h3-2 {
-      margin: 10px 0 0 160px;
-      padding: 16px 36px 12px 36px;
+      margin: 10px 0 0 158px;
+      padding: 16px 36px 12px 30px;
       color: darkslategray;
-      letter-spacing: 4px;
       text-align: right;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
       border-left: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
       border-top: 4px solid #E6AE02;
       border-color: #E6AE02;
       background-color: whitesmoke;
-      border-color: #E6AE02;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
     .about-article-2 .text-container-2 .text-wrapper-2 {
-      width: 472px;
-      margin-left: 50px;
+      width: 477px;
+      margin-left: 45px;
       border-left: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
@@ -255,31 +296,26 @@ article {
       border-top-right-radius: 0; }
       .about-article-2 .text-container-2 .text-wrapper-2 .P2 {
         padding: 20px 0 0 36px;
-        font-size: 14px;
-        text-align: right;
-        line-height: 160%;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-family: 'Raleway', fantasy; }
+        text-align: right; }
     .about-article-2 .text-container-2 .button-container-2 {
       margin: 0 0 0 158px;
-      padding: 8px 36px 8px 150px;
       border-left: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
       border-top: 4px solid #E6AE02;
       border-color: #E6AE02;
       background-color: whitesmoke;
-      border-color: #E6AE02;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0; }
       .about-article-2 .text-container-2 .button-container-2 .button-2 {
-        color: darkslategray;
-        text-align: center;
+        text-align: right;
         text-decoration: none;
-        font-weight: 700; }
-        .about-article-2 .text-container-2 .button-container-2 .button-2 span {
-          font-size: 28px; }
+        /*
+        font-weight: 900;
+        span {
+          font-size: 28px;
+        }
+         */ }
   .about-article-2 .image-container-2 {
     padding-top: 50px;
     margin-left: -50px; }
@@ -296,40 +332,45 @@ article {
       border-color: #87735D;
       border-width: 6px;
       border-radius: 10px;
-      top: -50px;
+      top: -33px;
       z-index: -1;
-      left: -50px; }
+      left: -33px; }
     .about-article-2 .image-container-2 .image-wrapper-2a {
       margin-bottom: 20px;
       background-color: whitesmoke;
-      height: 272px;
+      height: 270px;
       border-radius: 6px; }
       .about-article-2 .image-container-2 .image-wrapper-2a .lounge {
         box-shadow: -4px 4px 12px #131413;
-        opacity: 0.9;
         border-left: 3px solid #121211;
         border-bottom: 3px solid #121211;
         border-radius: 6px;
-        border-color: #6B380F; }
+        border-right: 3px solid #121211;
+        border-top: 3px solid #121211;
+        border-radius: 6px;
+        border-color: #E6AE02;
+        border-width: 4px; }
     .about-article-2 .image-container-2 .image-wrapper-2b {
+      margin-top: 26px;
       background-color: whitesmoke;
       height: 348px;
       border-radius: 6px; }
       .about-article-2 .image-container-2 .image-wrapper-2b .resto {
         box-shadow: -4px 4px 12px #131413;
-        opacity: 0.9;
         border-left: 3px solid #121211;
         border-bottom: 3px solid #121211;
         border-radius: 6px;
-        border-color: #6B380F; }
+        border-right: 3px solid #121211;
+        border-top: 3px solid #121211;
+        border-radius: 6px;
+        border-color: #E6AE02;
+        border-width: 4px; }
 
 .about-article-3 {
   display: flex;
   justify-content: space-around;
   position: relative;
   box-shadow: -4px -4px 22px #131413;
-  border-left: 3px solid #121211;
-  border-top: 3px solid #121211;
   border-radius: 6px;
   background-image: url("../img/woodboard-03.jpg");
   height: 692px;
@@ -349,46 +390,49 @@ article {
       border-color: #87735D;
       border-width: 6px;
       border-radius: 10px;
-      top: -50px;
+      top: -33px;
       z-index: -1;
-      left: -50px; }
+      left: -33px; }
     .about-article-3 .image-container-3 .image-wrapper-3 {
-      background-color: black;
-      height: 692px;
+      height: 690px;
       border-radius: 6px; }
       .about-article-3 .image-container-3 .image-wrapper-3 .bedroom {
         box-shadow: 4px 4px 12px #131413;
-        opacity: 0.8;
         border-right: 3px solid #121211;
         border-bottom: 3px solid #121211;
         border-radius: 6px;
-        border-color: #6B380F; }
+        border-left: 3px solid #121211;
+        border-top: 3px solid #121211;
+        border-radius: 6px;
+        border-color: #E6AE02;
+        border-width: 4px; }
   .about-article-3 .text-container-3 {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     margin-left: -80px;
     width: 540px;
-    height: 692px;
+    height: 698px;
+    justify-content: space-evenly;
     border-left: 3px solid #121211;
     border-bottom: 3px solid #121211;
     border-radius: 6px;
-    border-color: #6B380F;
+    border-right: 3px solid #121211;
+    border-top: 3px solid #121211;
+    border-radius: 6px;
+    border-color: #E6AE02;
+    border-width: 4px;
     background-image: url("../img/woodboard-09b.jpg");
-    justify-content: space-evenly;
     box-shadow: -4px 4px 12px #131413; }
     .about-article-3 .text-container-3 .h3-3 {
       margin: 10px 160px 0 0;
       padding: 16px 0 12px 36px;
-      color: darkslategray;
-      letter-spacing: 4px;
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
       border-top: 4px solid #E6AE02;
       border-color: #E6AE02;
       background-color: whitesmoke;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
     .about-article-3 .text-container-3 .text-wrapper-3 {
@@ -400,16 +444,11 @@ article {
       border-color: #E6AE02;
       background-color: whitesmoke;
       padding-bottom: 40px;
-      padding-right: 40px;
+      padding-right: 36px;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
       .about-article-3 .text-container-3 .text-wrapper-3 .P3 {
-        padding: 20px 0 0 36px;
-        font-size: 14px;
-        line-height: 160%;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-family: 'Raleway', fantasy; }
+        padding: 20px 0 0 36px; }
     .about-article-3 .text-container-3 .button-container-3 {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
@@ -418,103 +457,125 @@ article {
       border-color: #E6AE02;
       background-color: whitesmoke;
       margin: 0 160px 0 0;
-      padding: 8px 40px;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0; }
       .about-article-3 .text-container-3 .button-container-3 .button-3 {
-        color: darkslategray;
-        text-align: center;
+        text-align: left;
         text-decoration: none;
-        font-weight: 700; }
-        .about-article-3 .text-container-3 .button-container-3 .button-3 span {
-          font-size: 28px; }
+        /*
+        font-weight: 900;
+        span {
+          font-size: 28px;
+        }
+         */ }
 
-/*
 .about-article-4 {
   display: flex;
   justify-content: space-around;
   position: relative;
-  box-shadow: 4px -4px 22px #131413;
-  left: -80px;
-  top: 100px;
-  float: left;
-  .text-container-4 {
+  box-shadow: -4px -4px 16px #131413;
+  border-radius: 6px;
+  background-image: url("../img/woodboard-13.jpg");
+  height: 690px;
+  margin-top: 280px;
+  margin-bottom: 200px; }
+  .about-article-4 .text-container-4 {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 26px;
-    width: 400px;
-    height: 500px;
-    @include borderrightbottem;
-    background-color: $orange;
+    width: 525px;
+    height: 696px;
     justify-content: space-evenly;
-    box-shadow: 4px 4px 12px #131413;
-    .h3-4 {
-      margin: 10px 0 0 160px;
-      padding: 16px 40px 12px 36px;
+    border-right: 3px solid #121211;
+    border-bottom: 3px solid #121211;
+    border-radius: 6px;
+    border-left: 3px solid #121211;
+    border-top: 3px solid #121211;
+    border-radius: 6px;
+    border-color: #E6AE02;
+    border-width: 4px;
+    background-image: url("../img/woodboard-09b.jpg");
+    box-shadow: 4px 4px 12px #131413; }
+    .about-article-4 .text-container-4 .h3-4 {
+      margin: 10px 0 0 158px;
+      padding: 16px 36px 12px 36px;
       color: darkslategray;
-      letter-spacing: 4px;
-      @include borderleftbottem;
-      @include textandtitleswrap;
       text-align: right;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: $smokebrown;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
-    }
-    .text-wrapper-4 {
-      width: 390px;
-      margin-left: 26px;
-      @include borderleftbottem;
-      @include textandtitleswrap;
-      padding-bottom: 40px;
-      padding-right: 40px;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
-      .P4 {
-        padding: 40px 0 0  36px;
-        font-size: 16px;
-        text-align: right;
-        line-height: 160%;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-family: 'Raleway', fantasy;
-      }
-    }
-    .button-container-4 {
-      @include borderleftbottem;
-      @include textandtitleswrap;
-      background-color: $smokebrown;
+      border-left: 3px solid #121211;
+      border-bottom: 3px solid #121211;
+      border-radius: 6px;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
+      background-color: whitesmoke;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
+    .about-article-4 .text-container-4 .text-wrapper-4 {
+      width: 472px;
+      margin-left: 45px;
+      border-left: 3px solid #121211;
+      border-bottom: 3px solid #121211;
+      border-radius: 6px;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
+      background-color: whitesmoke;
+      padding-bottom: 20px;
+      padding-right: 36px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
+      .about-article-4 .text-container-4 .text-wrapper-4 .P4 {
+        padding: 20px 0 0 36px;
+        text-align: right; }
+    .about-article-4 .text-container-4 .button-container-4 {
       margin: 0 0 0 158px;
-      padding: 8px 40px;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
-      .button-2 {
-        color: darkslategray;
-        text-align: center;
+      border-left: 3px solid #121211;
+      border-bottom: 3px solid #121211;
+      border-radius: 6px;
+      border-top: 4px solid #E6AE02;
+      border-color: #E6AE02;
+      background-color: whitesmoke;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0; }
+      .about-article-4 .text-container-4 .button-container-4 .button-4 {
+        text-align: right;
         text-decoration: none;
-        font-weight: 700;
+        /*
+        font-weight: 900;
         span {
           font-size: 28px;
         }
-      }
-    }
-  }
-  .image-container-4 {
+         */ }
+  .about-article-4 .image-container-4 {
     padding-top: 50px;
-    margin-left: -24px;
-    .layout-3 {
+    margin-left: -80px; }
+    .about-article-4 .image-container-4 .layout-4 {
       position: absolute;
-      width: 1200px;
-      height: 454px;
-      background-color: $smokebrown;
+      width: 1300px;
+      height: 690px;
+      border-left: 3px solid #121211;
+      border-top: 3px solid #121211;
       border-radius: 6px;
-      top: -65px;
+      border-right: 3px solid #121211;
+      border-bottom: 3px solid #121211;
+      border-radius: 6px;
+      border-color: #87735D;
+      border-width: 6px;
+      border-radius: 10px;
+      top: -33px;
       z-index: -1;
-      left: 80px;
-    }
-  }
-}
-*/
+      left: -33px; }
+    .about-article-4 .image-container-4 .image-wrapper-4 {
+      margin-bottom: 20px;
+      height: 270px;
+      border-radius: 6px; }
+      .about-article-4 .image-container-4 .image-wrapper-4 .lounge {
+        box-shadow: -4px 4px 12px #131413;
+        border-left: 3px solid #121211;
+        border-bottom: 3px solid #121211;
+        border-radius: 6px;
+        border-right: 3px solid #121211;
+        border-top: 3px solid #121211;
+        border-radius: 6px;
+        border-color: #E6AE02;
+        border-width: 4px; }
 
 /*# sourceMappingURL=app.css.map */

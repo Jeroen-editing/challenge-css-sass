@@ -1,19 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900|Kodchasan:500,600,700|Mitr:500,700|Montserrat+Alternates:500,600,700,800,900|Orbitron:500,600,700,900|Red+Hat+Display:700,900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  //font-family: sans-serif;
   box-sizing: border-box;
 }
 
-$gold: #8C7332;
+$gold: #BC9A44;
 //$orange: #8A4914;
-$orange: #6B380F;
+//$orange: #6B380F;
 $yellow: #E6AE02;
-$backyellow: rgba(241, 172, 118, 1);
+$blackbrown: #332B23;
+//$whitebrown: #CCBDA3;
 $smokebrown: #87735D;
-$gray: #C2C2C2;
+//$gray: #C2C2C2;
 $text-color: darkgray;
 
 @mixin borderlefttop {
@@ -45,58 +46,67 @@ $text-color: darkgray;
 
 .headerbox {
   display: block;
-  margin-bottom: 180px;
+  //margin-bottom: -20px;
+}
+
+br {
+  line-height: 160%;
 }
 
 .title-content {
   height: 189px;
-  margin-top: 7%;
+  margin-left: -8px;
+  margin-top: 2.8%;
   position: relative;
-  font-size: 70px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 77px;
+  font-weight: 900;
   text-align: center;
-  text-shadow: 1px 1px 2px #262623;
+  text-shadow: -6px -6px 10px $blackbrown;
   line-height: 160px;
   letter-spacing: 28px;
   color: whitesmoke;
  .line {
    position: absolute;
-   width: 590px;
+   width: 720px;
    height: 8px;
-   background-color: #BC9A44;
-   box-shadow: 1px 1px 2px #262623;
+   background-color: $gold;
+   box-shadow: -4px -4px 8px $blackbrown;
+   border-radius: 4px;
    margin: 0 auto;
-   top: 140px;
+   top: 220px;
    left: 8px;
  }
 }
 
 .titlebox {
-  margin: 40px 0;
+  margin: 40px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 636px;
   .l-block {
     width: 755px;
     height: 640px;
-    position: center;
+    margin-left: 61px;
       .left {
         background-image: url("../img/wood-left.jpg"), linear-gradient(#131413, #1A1A19, #292815);
         background-repeat: no-repeat;
         opacity: 0.9;
         @include borderlefttop;
         border-radius: 0;
-        border-top-left-radius: 66px;
-        border-width: 12px;
+        border-top-left-radius: 80px;
+        border-width: 10px;
       }
   }
   .r-block {
     width: 740PX;
     height: 561px;
+    margin-left: -61px;
       .right {
         background-image: url("../img/wood-right.jpg"), linear-gradient(#0F0F0F, #0A0A09);
         background-repeat: no-repeat;
@@ -104,8 +114,8 @@ $text-color: darkgray;
         z-index: 1;
         @include borderrightbottem;
         border-radius: 0;
-        border-bottom-right-radius: 66px;
-        border-width: 12px;
+        border-bottom-right-radius: 80px;
+        border-width: 10px;
     }
   }
 }
@@ -119,30 +129,77 @@ $text-color: darkgray;
 }
 
 .img-bg {
-  width: 100%;
-  height: 100%;
+  width: 92%;
+  height: 92%;
+}
+
+.lineUnder {
+  width: 1440px;
+  height: 6px;
+  border-radius: 4px;
+  background-color: $smokebrown;
+  margin: 0 auto;
 }
 
 section {
   display: block;
   box-sizing: content-box;
-  margin-top: 200px;
-  //padding-left: 100px;
+  margin-top: 140px;
 }
 
 article {
   display: block;
-  width: 1200px;
+  width: 1240px;
   height: 460px;
+  background-size: 105%;
   background-color: white;
   margin: 0 auto;
+}
+
+h3, a {
+  font-family: 'Orbitron', sans-serif;
+  color: darkslategray;
+  letter-spacing: 4px;
+  text-shadow: 1px 1px 3px lightgoldenrodyellow;
+  border-color: $yellow;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 2px;
+  color: #243D3D;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 8px 36px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+a:hover {
+  background-image: url("../img/woodboard-12.jpg");
+  background-size: contain;
+  color: $yellow;
+  text-shadow: 2px 2px 2px black;
 }
 
 .about-article-1 {
   display: flex;
   justify-content: space-around;
   position: relative;
-  @include borderlefttop;
+  //@include borderlefttop;
+  border-radius: 6px;
   background-image: url("../img/woodboard-11.jpg");
   box-shadow: -4px -4px 16px #131413;
   .image-container-1 {
@@ -157,19 +214,22 @@ article {
       border-color: $smokebrown;
       border-width: 6px;
       border-radius: 10px;
-      top: -50px;
+      top: -33px;
       z-index: -1;
-      left: -50px;
+      left: -33px;
     }
     .image-wrapper-1 {
-      background-color: #1A1A19;
-      height: 449px;
+      //background-color: #1A1A19;
+      height: 445px;
       border-radius: 6px;
       .chair {
         box-shadow: 4px 4px 12px #131413;
-        opacity: 0.8;
+        //opacity: 0.8;
         @include borderrightbottem;
-        border-color: $orange;
+        @include borderlefttop;
+        //border-bottom: none;
+        border-color: $yellow;
+        border-width: 4px;
       }
     }
   }
@@ -179,22 +239,24 @@ article {
     margin-top: 50px;
     margin-left: -90px;
     width: 660px;
-    height: 448px;
-    @include borderleftbottem;
-    background-image: url("../img/woodboard-08.jpg");
-    border-color: $orange;
+    height: 452px;
     justify-content: space-evenly;
+    background-image: url("../img/woodboard-08.jpg");
+    @include borderleftbottem;
+    @include borderrighttop;
+    //border-bottom: none;
+    border-color: $yellow;
+    border-width: 4px;
     box-shadow: -4px 4px 12px #131413;
       .h3-1 {
         margin: 10px 240px 0 0;
         padding: 16px 0 12px 36px;
-        color: darkslategray;
-        letter-spacing: 4px;
-        text-shadow: 1px 1px 3px lightgoldenrodyellow;
+        //color: darkslategray;
+        //letter-spacing: 4px;
+        //text-shadow: 1px 1px 3px lightgoldenrodyellow;
         @include borderrightbottem;
         @include textandtitleswrap;
-        border-color: $yellow;
-        //background-color: $gray;
+        //border-color: $yellow;
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
       }
@@ -209,30 +271,26 @@ article {
       border-top-left-radius: 0;
       .P1 {
         padding: 20px 0 0 36px;
-        font-size: 14px;
-        line-height: 160%;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-family: 'Raleway', fantasy;
-
       }
     }
     .button-container-1 {
       margin: 0 240px 0 0;
-      padding: 8px 36px;
+      //padding: 8px 36px;
       @include borderrightbottem;
       @include textandtitleswrap;
-      border-color: $yellow;
+      //border-color: $yellow;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       .button-1 {
-        color: darkslategray;
-        text-align: center;
+        //color: darkslategray;
+        text-align: left;
         text-decoration: none;
+        /*
         font-weight: 900;
         span {
           font-size: 28px;
         }
+         */
       }
     }
   }
@@ -243,8 +301,9 @@ article {
   justify-content: space-around;
   position: relative;
   box-shadow: -4px -4px 16px #131413;
-  @include borderlefttop;
-  background-image: url("../img/woodboard-06.jpg");
+  //@include borderlefttop;
+  background-image: url("../img/woodboard-04.jpg");
+  border-radius: 6px;
   height: 640px;
   //left: -80px;
   margin-top: 280px;
@@ -253,30 +312,33 @@ article {
     flex-direction: column;
     margin-top: 50px;
     margin-left: 10px;
-    width: 525px;
-    height: 640px;
-    @include borderrightbottem;
-    border-color: $orange;
-    background-image: url("../img/woodboard-09b.jpg");
+    width: 530px;
+    height: 648px;
     justify-content: space-evenly;
+    @include borderrightbottem;
+    @include borderlefttop;
+    //border-bottom: none;
+    border-color: $yellow;
+    border-width: 4px;
+    background-image: url("../img/woodboard-09b.jpg");
     box-shadow: 4px 4px 12px #131413;
     .h3-2 {
-      margin: 10px 0 0 160px;
-      padding: 16px 36px 12px 36px;
+      margin: 10px 0 0 158px;
+      padding: 16px 36px 12px 30px;
       color: darkslategray;
-      letter-spacing: 4px;
+      //letter-spacing: 4px;
       text-align: right;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
+      //text-shadow: 1px 1px 3px lightgoldenrodyellow;
       //background-color: $smokebrown;
       @include borderleftbottem;
       @include textandtitleswrap;
-      border-color: $yellow;
+      //border-color: $yellow;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
     }
     .text-wrapper-2 {
-      width: 472px;
-      margin-left: 50px;
+      width: 477px;
+      margin-left: 45px;
       @include borderleftbottem;
       @include textandtitleswrap;
       padding-bottom: 20px;
@@ -285,30 +347,27 @@ article {
       border-top-right-radius: 0;
       .P2 {
         padding: 20px 0 0 36px;
-        font-size: 14px;
         text-align: right;
-        line-height: 160%;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-family: 'Raleway', fantasy;
       }
     }
     .button-container-2 {
       margin: 0 0 0 158px;
-      padding: 8px 36px 8px 150px;
+      //padding: 8px 36px 8px 77px;
       @include borderleftbottem;
       @include textandtitleswrap;
-      border-color: $yellow;
+      //border-color: $yellow;
       border-bottom-right-radius: 0;
       border-top-right-radius: 0;
       .button-2 {
-        color: darkslategray;
-        text-align: center;
+        //color: darkslategray;
+        text-align: right;
         text-decoration: none;
-        font-weight: 700;
+        /*
+        font-weight: 900;
         span {
           font-size: 28px;
         }
+         */
       }
     }
   }
@@ -324,31 +383,38 @@ article {
       border-color: $smokebrown;
       border-width: 6px;
       border-radius: 10px;
-      top: -50px;
+      top: -33px;
       z-index: -1;
-      left: -50px;
+      left: -33px;
     }
     .image-wrapper-2a {
       margin-bottom: 20px;
       background-color: whitesmoke;
-      height: 272px;
+      height: 270px;
       border-radius: 6px;
       .lounge {
         box-shadow: -4px 4px 12px #131413;
-        opacity: 0.9;
+        //opacity: 0.9;
         @include borderleftbottem;
-        border-color: $orange;
+        @include borderrighttop;
+        //border-bottom: none;
+        border-color: $yellow;
+        border-width: 4px;
       }
     }
     .image-wrapper-2b {
+      margin-top: 26px;
       background-color: whitesmoke;
       height: 348px;
       border-radius: 6px;
       .resto {
         box-shadow: -4px 4px 12px #131413;
-        opacity: 0.9;
+        //opacity: 0.9;
         @include borderleftbottem;
-        border-color: $orange;
+        @include borderrighttop;
+        //border-bottom: none;
+        border-color: $yellow;
+        border-width: 4px;
       }
     }
   }
@@ -359,7 +425,8 @@ article {
   justify-content: space-around;
   position: relative;
   box-shadow: -4px -4px 22px #131413;
-  @include borderlefttop;
+  //@include borderlefttop;
+  border-radius: 6px;
   background-image: url("../img/woodboard-03.jpg");
   height: 692px;
   margin-top: 280px;
@@ -374,19 +441,22 @@ article {
       border-color: $smokebrown;
       border-width: 6px;
       border-radius: 10px;
-      top: -50px;
+      top: -33px;
       z-index: -1;
-      left: -50px;
+      left: -33px;
     }
     .image-wrapper-3 {
-      background-color: black;
-      height: 692px;
+      //background-color: black;
+      height: 690px;
       border-radius: 6px;
       .bedroom {
         box-shadow: 4px 4px 12px #131413;
-        opacity: 0.8;
+        //opacity: 0.8;
         @include borderrightbottem;
-        border-color: $orange;
+        @include borderlefttop;
+        //border-bottom: none;
+        border-color: $yellow;
+        border-width: 4px;
       }
     }
   }
@@ -396,20 +466,23 @@ article {
     margin-top: 50px;
     margin-left: -80px;
     width: 540px;
-    height: 692px;
-    @include borderleftbottem;
-    border-color: $orange;
-    background-image: url("../img/woodboard-09b.jpg");
+    height: 698px;
     justify-content: space-evenly;
+    @include borderleftbottem;
+    @include borderrighttop;
+    //border-bottom: none;
+    border-color: $yellow;
+    border-width: 4px;
+    background-image: url("../img/woodboard-09b.jpg");
     box-shadow: -4px 4px 12px #131413;
     .h3-3 {
       margin: 10px 160px 0 0;
       padding: 16px 0 12px 36px;
-      color: darkslategray;
-      letter-spacing: 4px;
+      //color: darkslategray;
+      //letter-spacing: 4px;
       @include borderrightbottem;
       @include textandtitleswrap;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
+      //text-shadow: 1px 1px 3px lightgoldenrodyellow;
       //background-color: $smokebrown;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
@@ -419,16 +492,11 @@ article {
       @include borderrightbottem;
       @include textandtitleswrap;
       padding-bottom: 40px;
-      padding-right: 40px;
+      padding-right: 36px;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       .P3 {
         padding: 20px 0 0 36px;
-        font-size: 14px;
-        line-height: 160%;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-family: 'Raleway', fantasy;
       }
     }
     .button-container-3 {
@@ -436,106 +504,130 @@ article {
       @include textandtitleswrap;
       //background-color: $smokebrown;
       margin: 0 160px 0 0;
-      padding: 8px 40px;
+      //padding: 8px 36px;
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;
       .button-3 {
-        color: darkslategray;
-        text-align: center;
+        //color: darkslategray;
+        text-align: left;
         text-decoration: none;
-        font-weight: 700;
+        /*
+        font-weight: 900;
         span {
           font-size: 28px;
         }
+         */
       }
     }
   }
 }
 
-/*
 .about-article-4 {
   display: flex;
   justify-content: space-around;
   position: relative;
-  box-shadow: 4px -4px 22px #131413;
-  left: -80px;
-  top: 100px;
-  float: left;
+  box-shadow: -4px -4px 16px #131413;
+  //@include borderlefttop;
+  border-radius: 6px;
+  background-image: url("../img/woodboard-13.jpg");
+  height: 690px;
+  //left: -80px;
+  margin-top: 280px;
+  margin-bottom: 200px;
   .text-container-4 {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 26px;
-    width: 400px;
-    height: 500px;
-    @include borderrightbottem;
-    background-color: $orange;
+    //margin-left: 10px;
+    width: 525px;
+    height: 696px;
     justify-content: space-evenly;
+    @include borderrightbottem;
+    @include borderlefttop;
+    //border-bottom: none;
+    border-color: $yellow;
+    border-width: 4px;
+    background-image: url("../img/woodboard-09b.jpg");
     box-shadow: 4px 4px 12px #131413;
     .h3-4 {
-      margin: 10px 0 0 160px;
-      padding: 16px 40px 12px 36px;
+      margin: 10px 0 0 158px;
+      padding: 16px 36px 12px 36px;
       color: darkslategray;
-      letter-spacing: 4px;
+      //letter-spacing: 4px;
+      text-align: right;
+      //text-shadow: 1px 1px 3px lightgoldenrodyellow;
+      //background-color: $smokebrown;
       @include borderleftbottem;
       @include textandtitleswrap;
-      text-align: right;
-      text-shadow: 1px 1px 3px lightgoldenrodyellow;
-      background-color: $smokebrown;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
+      //border-color: $yellow;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
     }
     .text-wrapper-4 {
-      width: 390px;
-      margin-left: 26px;
+      width: 472px;
+      margin-left: 45px;
       @include borderleftbottem;
       @include textandtitleswrap;
-      padding-bottom: 40px;
-      padding-right: 40px;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
+      padding-bottom: 20px;
+      padding-right: 36px;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
       .P4 {
-        padding: 40px 0 0  36px;
-        font-size: 16px;
+        padding: 20px 0 0 36px;
         text-align: right;
-        line-height: 160%;
-        letter-spacing: 2px;
-        color: darkslategray;
-        font-family: 'Raleway', fantasy;
       }
     }
     .button-container-4 {
+      margin: 0 0 0 158px;
+      //padding: 8px 36px 8px 77px;
       @include borderleftbottem;
       @include textandtitleswrap;
-      background-color: $smokebrown;
-      margin: 0 0 0 158px;
-      padding: 8px 40px;
-      border-bottom-right-radius: 0px;
-      border-top-right-radius: 0px;
-      .button-2 {
-        color: darkslategray;
-        text-align: center;
+      //border-color: $yellow;
+      border-bottom-right-radius: 0;
+      border-top-right-radius: 0;
+      .button-4 {
+        //color: darkslategray;
+        text-align: right;
         text-decoration: none;
-        font-weight: 700;
+        /*
+        font-weight: 900;
         span {
           font-size: 28px;
         }
+         */
       }
     }
   }
   .image-container-4 {
     padding-top: 50px;
-    margin-left: -24px;
-    .layout-3 {
+    margin-left: -80px;
+    .layout-4 {
       position: absolute;
-      width: 1200px;
-      height: 454px;
-      background-color: $smokebrown;
-      border-radius: 6px;
-      top: -65px;
+      width: 1300px;
+      height: 690px;
+      @include borderlefttop;
+      @include borderrightbottem;
+      border-color: $smokebrown;
+      border-width: 6px;
+      border-radius: 10px;
+      top: -33px;
       z-index: -1;
-      left: 80px;
+      left: -33px;
+    }
+    .image-wrapper-4 {
+      margin-bottom: 20px;
+      //ackground-color: whitesmoke;
+      height: 270px;
+      border-radius: 6px;
+      .lounge {
+        box-shadow: -4px 4px 12px #131413;
+        //opacity: 0.9;
+        @include borderleftbottem;
+        @include borderrighttop;
+        //border-bottom: none;
+        border-color: $yellow;
+        border-width: 4px;
+      }
     }
   }
 }
-*/
