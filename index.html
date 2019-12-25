@@ -27,16 +27,15 @@
                 </div>
             </div>
         </div>
-            <div class="title-content">
-                <div class="line"></div>
-                <h1>WOOD <br> STOCK</h1>
-            </div>
+        <div class="title-content">
+            <div class="line"></div>
+            <h1>WOOD <br> STOCK</h1>
+        </div>
     </div>
-
+    <div><p id="rights"></p></div>
 </header>
 
 <div class="lineUnder"></div>
-
 
 <section>
     <article class="about-article-1">
@@ -62,13 +61,13 @@
                 </p>
             </div>
             <div class="button-container-1">
-                <a href="#" class="button-1">  <span> ☛ </span> LEARN MORE <span> ☚ </span></a>
+                <a href="#partTwo" class="button-1">  <span> ☛ </span> LEARN MORE <span> ☚ </span></a>
             </div>
         </div>
     </article>
 </section>
 
-<section>
+<section id="partTwo">
     <article class="about-article-2">
 
         <div class="text-container-2">
@@ -88,7 +87,7 @@
                 </p>
             </div>
             <div class="button-container-2">
-                <a href="#" class="button-2">  <span> ☛ </span> LEARN MORE <span> ☚ </span></a>
+                <a href="#partThree" class="button-2">  <span> ☛ </span> LEARN MORE <span> ☚ </span></a>
             </div>
         </div>
 
@@ -105,7 +104,7 @@
     </article>
 </section>
 
-<section>
+<section  id="partThree">
     <article class="about-article-3">
 
         <div class="image-container-3">
@@ -132,14 +131,14 @@
                 </p>
             </div>
             <div class="button-container-3">
-                <a href="#" class="button-3">  <span> ☛ </span> LEARN MORE <span> ☚ </span></a>
+                <a href="#partFour" class="button-3">  <span> ☛ </span> LEARN MORE <span> ☚ </span></a>
             </div>
         </div>
 
     </article>
 </section>
 
-<section>
+<section id="partFour">
     <article class="about-article-4">
 
         <div class="text-container-4">
@@ -176,6 +175,25 @@
         </div>
     </article>
 </section>
+
+<script>
+
+    function copyRight() {
+
+        let developer = "Jeroen De Vos";
+
+        let now = new Date();
+        //let months = ["january", "february", "march", "april", "mei", "june", "july", "august", "september", "october", "november", "december" ];
+        let shortMonths = ["jan.", "feb.", "march", "april", "mei", "june", "july", "aug.", "sept.", "oct.", "nov.", "dec." ];
+        let weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday" ];
+
+        let date = weekDays[now.getDay()] + ', ' + now.getDate() + ' ' + shortMonths[now.getMonth()] + ' ' + now.getFullYear();
+        let time = now.getHours() + ':' + now.getMinutes();
+
+        document.getElementById("rights").innerHTML = '● ' + date + "<b> &copy; " + developer + " &reg; </b>" + time + ' ●';
+    }
+    copyRight()
+</script>
 
 </body>
 

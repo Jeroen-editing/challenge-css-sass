@@ -56,7 +56,7 @@ br {
       border-top: 3px solid #121211;
       border-radius: 6px;
       border-radius: 0;
-      border-top-left-radius: 80px;
+      border-top-left-radius: 120px;
       border-width: 10px; }
   .titlebox .r-block {
     width: 740PX;
@@ -71,7 +71,7 @@ br {
       border-bottom: 3px solid #121211;
       border-radius: 6px;
       border-radius: 0;
-      border-bottom-right-radius: 80px;
+      border-bottom-right-radius: 120px;
       border-width: 10px; }
 
 .header {
@@ -85,11 +85,30 @@ br {
   width: 92%;
   height: 92%; }
 
+#rights {
+  margin: -160px 0 150px 954px;
+  padding: 2px 0 3px 12px;
+  max-width: 404px;
+  color: #E6AE02;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom-right-radius: 12px;
+  background-color: rgba(51, 43, 35, 0.7); }
+  #rights b {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px; }
+
 .lineUnder {
   width: 1440px;
   height: 6px;
   border-radius: 4px;
-  background-color: #87735D;
+  background-color: #85715b;
   margin: 0 auto; }
 
 section {
@@ -158,7 +177,7 @@ a:hover {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-color: #87735D;
+      border-color: #85715b;
       border-width: 6px;
       border-radius: 10px;
       top: -33px;
@@ -329,7 +348,7 @@ a:hover {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-color: #87735D;
+      border-color: #85715b;
       border-width: 6px;
       border-radius: 10px;
       top: -33px;
@@ -387,7 +406,7 @@ a:hover {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-color: #87735D;
+      border-color: #85715b;
       border-width: 6px;
       border-radius: 10px;
       top: -33px;
@@ -557,7 +576,7 @@ a:hover {
       border-right: 3px solid #121211;
       border-bottom: 3px solid #121211;
       border-radius: 6px;
-      border-color: #87735D;
+      border-color: #85715b;
       border-width: 6px;
       border-radius: 10px;
       top: -33px;

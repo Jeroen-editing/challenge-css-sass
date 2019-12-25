@@ -9,11 +9,11 @@
 
 $gold: #BC9A44;
 //$orange: #8A4914;
-//$orange: #6B380F;
+$orange: rgba(107, 51, 0, 0.88);
 $yellow: #E6AE02;
 $blackbrown: #332B23;
 //$whitebrown: #CCBDA3;
-$smokebrown: #87735D;
+$smokebrown: #85715b;
 //$gray: #C2C2C2;
 $text-color: darkgray;
 
@@ -99,7 +99,7 @@ br {
         opacity: 0.9;
         @include borderlefttop;
         border-radius: 0;
-        border-top-left-radius: 80px;
+        border-top-left-radius: 120px;
         border-width: 10px;
       }
   }
@@ -114,7 +114,7 @@ br {
         z-index: 1;
         @include borderrightbottem;
         border-radius: 0;
-        border-bottom-right-radius: 80px;
+        border-bottom-right-radius: 120px;
         border-width: 10px;
     }
   }
@@ -131,6 +131,27 @@ br {
 .img-bg {
   width: 92%;
   height: 92%;
+}
+
+#rights{
+  margin: -160px 0 150px 954px;
+  padding: 2px 0 3px 12px;
+  max-width: 404px;
+  color: $yellow;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom-right-radius: 12px;
+  background-color: rgba(51, 43, 35, 0.7);
+  b {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
 }
 
 .lineUnder {
