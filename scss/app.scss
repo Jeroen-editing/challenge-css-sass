@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Exo+2:400,500,600,700,800,900|Kodchasan:500,600,700|Mitr:500,700|Montserrat+Alternates:500,600,700,800,900|Orbitron:500,600,700,900|Red+Hat+Display:700,900&display=swap");
 
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +17,7 @@ $blackbrown: #332B23;
 $smokebrown: #85715b;
 //$gray: #C2C2C2;
 $text-color: darkgray;
+
 
 @mixin borderlefttop {
   border-left: 3px solid rgba(18, 18, 17, 1);
